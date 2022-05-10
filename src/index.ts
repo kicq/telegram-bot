@@ -5,13 +5,13 @@ import './events'
 import './news'
 
 import users from './db/data/users.json'
-import { destroyRecord } from './db'
 import http  from 'http'
+const port = process.env.PORT || 3000
 http.createServer(function (req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' })
   res.write('Hello World!')
   res.end()
-}).listen(8080)
+}).listen(port)
 
 
 const data = users as UserList
