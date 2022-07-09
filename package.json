@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./dist -p 3001",
     "build": "tsc",
+    "dev": "nodemon ./src/index.ts",
     "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,13 +17,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vitalets/google-translate-api": "^8.0.0",
-    "telegraf": "^4.8.1",
-    "ts-newsapi": "^1.0.0",
-    "weather-js": "^2.0.0"
+    "@grammyjs/menu": "^1.1.2",
+    "@grammyjs/router": "^2.0.0",
+    "grammy": "^1.9.0",
+    "grammy-inline-menu": "^7.0.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.31",
+    "@types/node": "^17.0.45",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",
